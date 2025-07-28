@@ -9,7 +9,7 @@ const baseUrl = 'https://api.waifu.pics/';
  */
 
 export const getRandomImage = async (type, isSfw) => {
-  const respons = await fetch(`${baseUrl}${isSfw ? 'sfw' : 'nsfw'}/${type}`);
+  const respons = await fetch(`${baseUrl}${isSfw ? 'sfw' : 'sfw'}/${type}`);
   const data = await respons.json();
 
   return data.url;
