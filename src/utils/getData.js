@@ -7,7 +7,7 @@ const baseUrl = 'https://api.waifu.pics/';
  * @param {boolean} isSfw
  *
  */
-
+// hapus
 export const getRandomImage = async (type, isSfw) => {
   const respons = await fetch(`${baseUrl}${isSfw ? 'sfw' : 'sfw'}/${type}`);
   const data = await respons.json();
